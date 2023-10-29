@@ -44,7 +44,7 @@ except URLError as e:
 
 #Snowflake function
 def get_Fruit_load_list():
-  with my_cnx.cursor() as my_cnx
+  with my_cnx.cursor() as my_cur
     my_cur.execute("select * from FRUIT_LOAD_LIST")
     return my_cur.fetchall()
 
