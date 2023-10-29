@@ -20,5 +20,7 @@ fruits_to_show = my_fruit_list.loc[Fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 #rest response
+streamlit.header("Fruityvice Fruit Advice!")
+
 fruitvice_Response = response.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+streamlit.text(fruityvice_response.json())
